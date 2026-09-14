@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panel de edición | Juguetería Coliseo</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="admin-page">
+<header class="site-header">
+  <a class="logo" href="index.html"><span class="logo-icon">🧸</span><span><b>Juguetería Coliseo</b><small>Panel de edición</small></span></a>
+  <nav><a href="index.html">← Ver catálogo</a></nav>
+</header>
+
+<main class="admin-main">
+  <div class="admin-notice"><b>Cómo funciona:</b> este panel no necesita PHP ni base de datos. Los cambios se guardan temporalmente en este navegador. Cuando termines, pulsa <b>Descargar data.js</b> y reemplaza <code>js/data.js</code> en GitHub. Las imágenes deben estar dentro de la carpeta <code>img/</code>.</div>
+  <div id="message" class="message"></div>
+
+  <section class="editor-card">
+    <h1>⚙ Panel de edición</h1>
+    <h2>Datos del negocio</h2>
+    <div class="form-grid">
+      <label>Nombre<input id="siteName"></label>
+      <label>Lema<input id="tagline"></label>
+      <label>Dirección<input id="direccion"></label>
+      <label>Móvil 1<input id="telefono1"></label>
+      <label>Móvil 2<input id="telefono2"></label>
+      <label>WhatsApp (solo números)<input id="whatsapp"></label>
+      <label>Horario<input id="horario"></label>
+      <label>Facebook<input id="facebook" placeholder="https://facebook.com/..."></label>
+      <label>Instagram<input id="instagram" placeholder="https://instagram.com/..."></label>
+      <label>Google Maps<input id="mapa" placeholder="https://maps.google.com/..."></label>
+    </div>
+    <button id="saveSite" class="btn-primary">Guardar datos del negocio</button>
+  </section>
+
+  <section class="editor-card">
+    <h2>🏷️ Categorías</h2>
+    <form id="categoryForm" class="inline-form">
+      <input id="newCategory" placeholder="Ej.: Juguetes para Bebés" required>
+      <button class="btn-primary">+ Agregar categoría</button>
+    </form>
+    <ul id="categoryList" class="admin-list"></ul>
+  </section>
+
+  <section class="editor-card">
+    <h2 id="formTitle">➕ Agregar producto</h2>
+    <form id="productForm" class="form-grid">
+      <label>Nombre del producto<input id="pNombre" placeholder="Oso de Peluche" required></label>
+      <label>Precio<input id="pPrecio" type="number" min="0" step="0.01" placeholder="1250" required></label>
+      <label>Categoría<select id="pCategoria" required></select></label>
+      <label>Ruta de imagen<input id="pImagen" placeholder="img/oso.jpg" required><small>Ejemplo: img/oso.jpg</small></label>
+      <label class="file-label">Seleccionar imagen para conocer el nombre del archivo<input id="pImagenFile" type="file" accept="image/*"><small>La selección no copia automáticamente la imagen al repositorio; súbela a <code>img/</code> en GitHub.</small></label>
+      <label>Descripción<input id="pDescripcion" placeholder="Descripción breve del juguete"></label>
+      <label class="check-label"><input id="pActivo" type="checkbox" checked> Mostrar producto en el catálogo</label>
+      <div class="form-buttons"><button id="saveProductText" class="btn-primary" type="submit">Agregar producto</button><button id="cancelEdit" class="btn-secondary" type="button" hidden>Cancelar edición</button></div>
+    </form>
+  </section>
+
+  <section class="editor-card">
+    <h2>🧸 Productos actuales</h2>
+    <p class="muted">Puedes editar, duplicar, ocultar o eliminar productos.</p>
+    <ul id="productList" class="admin-list product-admin-list"></ul>
+  </section>
+
+  <section class="editor-card publish-card">
+    <h2>🚀 Publicar cambios</h2>
+    <p>Cuando termines de editar, descarga el archivo y súbelo a GitHub:</p>
+    <ol><li>Pulsa <b>Descargar data.js</b>.</li><li>En GitHub abre <code>js/data.js</code>.</li><li>Reemplaza su contenido con el archivo descargado.</li><li>Si agregaste imágenes nuevas, súbelas a <code>img/</code>.</li><li>Espera unos minutos y abre tu GitHub Page.</li></ol>
+    <button id="download" class="btn-primary">⬇ Descargar data.js para GitHub</button>
+    <button id="clearLocal" class="btn-secondary">Restaurar datos iniciales</button>
+  </section>
+</main>
+<footer><b>Juguetería Coliseo</b><span>Panel de edición · GitHub Pages</span></footer>
+<script src="js/data.js"></script><script src="js/admin.js"></script>
+</body>
+</html>
