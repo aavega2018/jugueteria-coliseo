@@ -12,6 +12,7 @@ const SITE_DATA = {
     "instagram": "",
     "mapa": "https://maps.app.goo.gl/cDRuSuBc4DSAPj7F8"
   },
+
   "categorias": [
     "Peluches",
     "Autos y Vehículos",
@@ -21,24 +22,36 @@ const SITE_DATA = {
     "Muñecas",
     "Juguetes Educativos",
     "Set de Maquillaje",
-   "Set de Armar Pulsas",
+    "Set de Armar Pulsas",
     "Juegos de Cocina",
     "Artículos para Bebés",
     "Carriolas",
-"Muñecas",
-"Bebés",
-"Barbies",
+    "Bebés",
+    "Accesorios Animales",
+    "Barbies"
   ],
+
   "productos": [
     {
       "id": "oso-peluche",
-      "nombre": "Jaula con Perrito",
-      "precio": 4000,
-      "imagen": "img/Jaula con Perrito.jpeg",
+      "nombre": "Oso de Peluche",
+      "precio": 1250,
+      "imagen": "img/oso.svg",
       "categoria": "Peluches",
       "descripcion": "Suave y perfecto para regalar.",
       "activo": true
     },
+    {
+      "id": "jaula-Perrito",
+      "nombre": "Jaula con Perrito",
+      "precio": 4000,
+      "imagen": "img/Jaula con Perrito.jpeg",
+      "categoria": "Accesorios Animales",
+      "descripcion": "Cuida a tu perrito.",
+      "activo": true
+    },
+
+    
     {
       "id": "carro-deportivo",
       "nombre": "Carro Deportivo",
