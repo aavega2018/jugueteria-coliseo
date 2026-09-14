@@ -20,6 +20,14 @@ const SITE_DATA = {
     "Rompecabezas",
     "Muñecas",
     "Juguetes Educativos"
+    "Set de Maquillaje"
+   "Set de Armar Pulsas"
+    "Juegos de Cocina"
+    "Artículos para Bebés"
+    "Carriolas"
+"Muñecas"
+"Bebés"
+"Barbies"
   ],
   "productos": [
     {
