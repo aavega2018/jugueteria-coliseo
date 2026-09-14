@@ -10,7 +10,7 @@ const SITE_DATA = {
     "horario": "Lunes a Sábado: 9:00 a.m. – 4:00 p.m.",
     "facebook": "https://www.facebook.com/argollas.holguin.5",
     "instagram": "",
-    "mapa": ""
+    "mapa": "https://maps.app.goo.gl/cDRuSuBc4DSAPj7F8"
   },
   "categorias": [
     "Peluches",
