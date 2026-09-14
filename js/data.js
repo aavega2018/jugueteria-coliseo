@@ -32,9 +32,9 @@ const SITE_DATA = {
   "productos": [
     {
       "id": "oso-peluche",
-      "nombre": "Oso de Peluche",
-      "precio": 1250,
-      "imagen": "img/oso.svg",
+      "nombre": "Jaula con Perrito",
+      "precio": 4000,
+      "imagen": "img/Jaula con Perrito.jpeg",
       "categoria": "Peluches",
       "descripcion": "Suave y perfecto para regalar.",
       "activo": true
