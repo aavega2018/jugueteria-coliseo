@@ -19,15 +19,15 @@ const SITE_DATA = {
     "Juegos de Mesa",
     "Rompecabezas",
     "Muñecas",
-    "Juguetes Educativos"
-    "Set de Maquillaje"
-   "Set de Armar Pulsas"
-    "Juegos de Cocina"
-    "Artículos para Bebés"
-    "Carriolas"
-"Muñecas"
-"Bebés"
-"Barbies"
+    "Juguetes Educativos",
+    "Set de Maquillaje",
+   "Set de Armar Pulsas",
+    "Juegos de Cocina",
+    "Artículos para Bebés",
+    "Carriolas",
+"Muñecas",
+"Bebés",
+"Barbies",
   ],
   "productos": [
     {
