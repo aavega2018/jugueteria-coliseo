@@ -6,7 +6,7 @@
   const SESSION_MINUTES = 30;
 
   const ADMIN_USER = "admin";
-  const ADMIN_PASSWORD_HASH = "f697587e4b6442256322eb780e347fc15caf77485b06faf07d90251c06e0eba4";
+  const ADMIN_PASSWORD_HASH = "65eca44cf34c2dedef78627c3b808d069e8d9b0bf4cd1aef5a8d851f786b4cb9";
 
   const $ = id => document.getElementById(id);
   let data = normalizeData(window.SITE_DATA || {});
