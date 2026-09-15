@@ -4,6 +4,287 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Panel de edición | Juguetería Coliseo</title>
 <link rel="stylesheet" href="css/styles.css">
+<style id="admin-v2-style">
+  /* Panel administrativo V2: independiente del diseño público */
+  .admin-page {
+    margin: 0;
+    background: #fffaf5;
+    color: #33263d;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .admin-page * { box-sizing: border-box; }
+  .admin-page .site-header {
+    min-height: 68px;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .admin-page .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .admin-page .logo-icon {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    line-height: 1;
+    flex: 0 0 42px;
+  }
+  .admin-page .logo b { display: block; font-size: 18px; line-height: 1.1; }
+  .admin-page .logo small { display: block; font-size: 12px; margin-top: 2px; }
+  .admin-page .site-header nav a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .admin-page .admin-main {
+    width: min(1050px, calc(100% - 28px));
+    margin: 22px auto 36px;
+  }
+  .admin-page .admin-notice {
+    margin-bottom: 16px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    background: #fff1bf;
+    border: 1px solid #efd98b;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .admin-page .message {
+    min-height: 0;
+    margin: 0 0 12px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .admin-page .message:not(:empty) {
+    padding: 10px 12px;
+    border-radius: 9px;
+    background: #e8f8ed;
+  }
+  .admin-page .message.error {
+    background: #ffe8e5;
+  }
+
+  .admin-page .editor-card {
+    margin: 0 0 18px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid #eadfea;
+    box-shadow: 0 4px 14px rgba(70, 45, 75, .07);
+  }
+  .admin-page .editor-card h1 {
+    margin: 0 0 18px;
+    font-size: 23px;
+  }
+  .admin-page .editor-card h2 {
+    margin: 0 0 14px;
+    font-size: 18px;
+  }
+  .admin-page .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px 16px;
+  }
+  .admin-page label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .admin-page input,
+  .admin-page select {
+    width: 100%;
+    min-height: 40px;
+    padding: 9px 11px;
+    border: 1px solid #d9ccdc;
+    border-radius: 9px;
+    background: #fff;
+    color: #33263d;
+    font: inherit;
+    font-weight: 400;
+    outline: none;
+  }
+  .admin-page input:focus,
+  .admin-page select:focus {
+    border-color: #9a68b0;
+    box-shadow: 0 0 0 3px rgba(154,104,176,.12);
+  }
+  .admin-page small {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.35;
+  }
+  .admin-page .inline-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+  .admin-page .inline-form input { flex: 1; }
+
+  .admin-page button {
+    min-height: 38px;
+    padding: 8px 13px;
+    border: 0;
+    border-radius: 9px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .admin-page .btn-primary {
+    background: #76508b;
+    color: #fff;
+  }
+  .admin-page .btn-secondary {
+    background: #eee7f0;
+    color: #4a3a51;
+  }
+  .admin-page button:hover { filter: brightness(.97); }
+  .admin-page button.danger {
+    background: #f7d9d5;
+    color: #8b3027;
+  }
+  .admin-page button.mini {
+    min-height: 34px;
+    padding: 6px 10px;
+    background: #f0e8f3;
+    color: #4f3a59;
+  }
+
+  .admin-page .admin-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .admin-page .admin-list > li {
+    min-height: 48px;
+    padding: 9px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 1px solid #eee6ef;
+  }
+  .admin-page .admin-list > li:last-child { border-bottom: 0; }
+  .admin-page .admin-list .row-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+  .admin-page .product-admin-list > li { align-items: center; }
+  .admin-page .admin-product-info {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  .admin-page .admin-product-info img {
+    width: 54px;
+    height: 54px;
+    flex: 0 0 54px;
+    object-fit: contain;
+    border-radius: 9px;
+    background: #faf5fb;
+    border: 1px solid #eee3f0;
+  }
+  .admin-page .admin-product-info div {
+    min-width: 0;
+  }
+  .admin-page .admin-product-info strong {
+    display: block;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .admin-page .admin-product-info small {
+    display: block;
+    margin-top: 3px;
+    color: #6e6073;
+  }
+  .admin-page .inactive { opacity: .58; }
+  .admin-page .check-label {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+  }
+  .admin-page .check-label input {
+    width: 17px;
+    min-height: 17px;
+    padding: 0;
+  }
+  .admin-page .form-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .admin-page .muted {
+    margin-top: -5px;
+    color: #756979;
+    font-size: 13px;
+  }
+  .admin-page .publish-card ol {
+    padding-left: 22px;
+    line-height: 1.65;
+    font-size: 14px;
+  }
+  .admin-page .publish-card code,
+  .admin-page .admin-notice code {
+    padding: 2px 5px;
+    border-radius: 5px;
+    background: #f2edf4;
+    font-size: 12px;
+  }
+  .admin-page footer {
+    padding: 20px 15px 28px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+  @media (max-width: 700px) {
+    .admin-page .site-header {
+      padding: 10px 14px;
+    }
+    .admin-page .admin-main {
+      width: min(100% - 18px, 1050px);
+      margin-top: 12px;
+    }
+    .admin-page .editor-card { padding: 15px; }
+    .admin-page .form-grid { grid-template-columns: 1fr; }
+    .admin-page .inline-form {
+      align-items: stretch;
+      flex-direction: column;
+    }
+    .admin-page .inline-form button { width: 100%; }
+    .admin-page .admin-list > li {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .admin-page .admin-list .row-actions {
+      width: 100%;
+      justify-content: flex-start;
+    }
+    .admin-page .admin-product-info { width: 100%; }
+    .admin-page .form-buttons {
+      flex-wrap: wrap;
+    }
+  }
+</style>
+
 </head>
 <body class="admin-page">
 <header class="site-header">
