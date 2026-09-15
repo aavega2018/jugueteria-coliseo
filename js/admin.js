@@ -9,6 +9,11 @@
   const ADMIN_PASSWORD_HASH = "65eca44cf34c2dedef78627c3b808d069e8d9b0bf4cd1aef5a8d851f786b4cb9";
 
   const $ = id => document.getElementById(id);
+  window.addEventListener("error", event => {
+    const box = document.getElementById("loginError");
+    if (box && !document.getElementById("adminApp")?.hidden) return;
+    if (box) box.textContent = "Error del panel: " + (event.message || "JavaScript no pudo cargarse.");
+  });
   let data = normalizeData(window.SITE_DATA || {});
   let editingIndex = null;
   let dirty = false;
@@ -181,9 +186,18 @@
   }
 
   async function checkLogin(user, pass) {
-    if (!window.crypto?.subtle) return false;
-    const hash = await sha256(pass);
-    return user === ADMIN_USER && hash === ADMIN_PASSWORD_HASH;
+    // GitHub Pages uses HTTPS, but keep a fallback so the login
+    // does not silently fail in browsers/environments without Web Crypto.
+    if (user !== ADMIN_USER) return false;
+    try {
+      if (window.crypto?.subtle) {
+        const hash = await sha256(pass);
+        return hash === ADMIN_PASSWORD_HASH;
+      }
+    } catch (err) {
+      console.warn("Web Crypto no disponible; se usa comprobación de respaldo.", err);
+    }
+    return pass === "Coliseo2026*";
   }
 
   function sessionValid() {
