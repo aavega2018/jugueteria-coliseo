@@ -10,73 +10,19 @@ const SITE_DATA = {
     "horario": "Lunes a Sábado: 9:00 a.m. – 4:00 p.m.",
     "facebook": "https://www.facebook.com/argollas.holguin.5",
     "instagram": "",
-    "mapa": "https://maps.app.goo.gl/cDRuSuBc4DSAPj7F8"
+    "mapa": ""
   },
-
   "categorias": [
-    "Peluches",
-    "Autos y Vehículos",
-    "Juegos de Construcción",
-    "Juegos de Mesa",
-    "Rompecabezas",
-    "Muñecas",
-    "Juguetes Educativos",
-    "Set de Maquillaje",
-    "Set de Armar Pulsas",
-    "Juegos de Cocina",
-    "Artículos para Bebés",
-    "Carriolas",
-    "Bebés",
-    "Accesorios Animales",
-    "Barbies"
+    "Artículos para Bebés"
   ],
-
   "productos": [
     {
-      "id": "oso-peluche",
-      "nombre": "Oso de Peluche",
-      "precio": 1250,
-      "imagen": "img/oso.svg",
-      "categoria": "Peluches",
-      "descripcion": "Suave y perfecto para regalar.",
-      "activo": true
-    },
-    {
-      "id": "jaula-Perrito",
-      "nombre": "Jaula con Perrito",
-      "precio": 4000,
-      "imagen": "img/Jaula con Perrito.jpeg",
-      "categoria": "Accesorios Animales",
-      "descripcion": "Cuida a tu perrito.",
-      "activo": true
-    },
-
-    
-    {
-      "id": "carro-deportivo",
-      "nombre": "Carro Deportivo",
-      "precio": 850,
-      "imagen": "img/carro.svg",
-      "categoria": "Autos y Vehículos",
-      "descripcion": "Diversión para pequeños pilotos.",
-      "activo": true
-    },
-    {
-      "id": "set-construccion",
-      "nombre": "Set de Construcción",
-      "precio": 1480,
-      "imagen": "img/construccion.svg",
-      "categoria": "Juegos de Construcción",
-      "descripcion": "Construye, imagina y aprende.",
-      "activo": true
-    },
-    {
-      "id": "muneca-moda",
-      "nombre": "Muñeca de Moda",
-      "precio": 1060,
-      "imagen": "img/muneca.svg",
-      "categoria": "Muñecas",
-      "descripcion": "Un regalo especial para jugar.",
+      "id": "set-de-regalos-para-bebes-1789670860884",
+      "nombre": "Set de Regalos para Bebés",
+      "precio": 3500,
+      "imagen": "img/1.jpeg",
+      "categoria": "Artículos para Bebés",
+      "descripcion": "Set de Regalos para Bebés",
       "activo": true
     }
   ]
