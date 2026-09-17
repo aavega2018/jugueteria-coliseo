@@ -169,11 +169,11 @@ const SITE_DATA = {
     },
     {
       "id": "00042",
-      "nombre": "Carro lamborghini con Luces",
+      "nombre": "Carro Lamborghini con Luces",
       "precio": 7000,
       "imagen": "img/42.jpeg",
       "categoria": "Carros de Control Remoto",
-      "descripcion": "Carro lamborghini con Luces (32cm)",
+      "descripcion": "Carro Lamborghini con Luces (32cm)",
       "activo": true
     },
     {
@@ -187,11 +187,11 @@ const SITE_DATA = {
     },
     {
       "id": "00044",
-      "nombre": "Ford mustang con Control Remoto",
+      "nombre": "Ford Mustang con Control Remoto",
       "precio": 7000,
       "imagen": "img/44.jpeg",
       "categoria": "Carros de Control Remoto",
-      "descripcion": "Ford mustang con Control Remoto",
+      "descripcion": "Ford Mustang con Control Remoto",
       "activo": true
     },
     {
@@ -214,11 +214,11 @@ const SITE_DATA = {
     },
     {
       "id": "00053",
-      "nombre": "Camión Montruo de Construcción (3 Modelos)",
+      "nombre": "Camión Monatruo de Construcción (3 Modelos)",
       "precio": 1500,
       "imagen": "img/53.jpeg",
       "categoria": "Carros, Rastras y Camiones",
-      "descripcion": "Tu propio camión montruo de construcción",
+      "descripcion": "Tu propio camión monatruo de construcción",
       "activo": true
     },
     {
