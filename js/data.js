@@ -10,25 +10,25 @@ const SITE_DATA = {
     "horario": "Lunes a Sábado: 9:00 a.m. – 4:00 p.m.",
     "facebook": "https://www.facebook.com/argollas.holguin.5",
     "instagram": "",
-    "mapa": ""
+    "mapa": "https://maps.app.goo.gl/71cZYnBmh7w47vcR9"
   },
   "categorias": [
-    "Artículos para Bebés"
-    "Bebés"
-"Bicicletas y Patinetas"
-"Carros de Control Remoto"
-"Carros, Rastras y Camiones"
-"Castillos"
-"Juguetes Didácticos"
-"Juguetes Musicales"
-"Libros de Cuentos"
-"Muñecas"
-"Pelotas y Juguetes de Playa"
-"Pistolas"
-"Set de Armas"
-"Set de Cocina, Médico y de Uñas"
-"Set de Corona y de Tacones"
-"Set de Dino, Animales y de Herramientas"
+    "Artículos para Bebés",
+    "Bebés",
+"Bicicletas y Patinetas",
+"Carros de Control Remoto",
+"Carros, Rastras y Camiones",
+"Castillos",
+"Juguetes Didácticos",
+"Juguetes Musicales",
+"Libros de Cuentos",
+"Muñecas",
+"Pelotas y Juguetes de Playa",
+"Pistolas",
+"Set de Armas",
+"Set de Cocina, Médico y de Uñas",
+"Set de Corona y de Tacones",
+"Set de Dino, Animales y de Herramientas",
 "Set de Maquillaje y de Armar Pulsas"
   ],
   "productos": [
@@ -40,7 +40,7 @@ const SITE_DATA = {
       "categoria": "Artículos para Bebés",
       "descripcion": "Set de Regalos para Bebés",
       "activo": true
-    }
+    },
     {
       "id": "00012",
       "nombre": "Sonares para Bebés",
@@ -49,7 +49,7 @@ const SITE_DATA = {
       "categoria": "Artículos para Bebés",
       "descripcion": "Sonares para Bebés",
       "activo": true
-    }
+    },
     {
       "id": "00013",
       "nombre": "Happy Horse",
@@ -58,7 +58,7 @@ const SITE_DATA = {
       "categoria": "Artículos para Bebés",
       "descripcion": "El regalo Perfecto para hacer reir a tu pequeña",
       "activo": true
-    }
+    },
     {
       "id": "00014",
       "nombre": "Combo Maquillaje para Bebés",
@@ -67,7 +67,7 @@ const SITE_DATA = {
       "categoria": "Artículos para Bebés",
       "descripcion": "Combo maquillaje para bebé",
       "activo": true
-    }
+    },
     {
       "id": "00015",
       "nombre": "Muñes de Gomas que Pitan",
@@ -76,7 +76,7 @@ const SITE_DATA = {
       "categoria": "Artículos para Bebés",
       "descripcion": "Muñes de Bomas que pitan con amor",
       "activo": true
-    }
+    },
     {
       "id": "00016",
       "nombre": "Jaboneras de Viajes",
@@ -85,7 +85,7 @@ const SITE_DATA = {
       "categoria": "Artículos para Bebés",
       "descripcion": "Jaboneras de Viajes para Bebés con un diseño Antiderrames, Colores Vibrantes, Compactar y Ligeras",
       "activo": true
-    }
+    },
     {
       "id": "00017",
       "nombre": "Set de Alimentación",
@@ -94,6 +94,7 @@ const SITE_DATA = {
       "categoria": "Artículos para Bebés",
       "descripcion": "El Kit perfecto para su Alimentación",
       "activo": true
-    }
+    },
   ]
 };
+
