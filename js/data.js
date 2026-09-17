@@ -214,11 +214,11 @@ const SITE_DATA = {
     },
     {
       "id": "00053",
-      "nombre": "Camión Monatruo de Construcción (3 Modelos)",
+      "nombre": "Camión Monstruo de Construcción (3 Modelos)",
       "precio": 1500,
       "imagen": "img/53.jpeg",
       "categoria": "Carros, Rastras y Camiones",
-      "descripcion": "Tu propio camión monatruo de construcción",
+      "descripcion": "Tu propio camión monstruo de construcción",
       "activo": true
     },
     {
