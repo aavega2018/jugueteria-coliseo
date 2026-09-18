@@ -497,7 +497,7 @@ const SITE_DATA = {
       "precio": 5000,
       "imagen": "img/717.jpeg",
       "categoria": "Juguetes Didácticos",
-      "descripcion": "Arco de Baloncesto con su balon y otros accesorios,
+      "descripcion": "Arco de Baloncesto con su balon y otros accesorios",
       "activo": true
     },
      {
