@@ -699,6 +699,78 @@ const SITE_DATA = {
       "activo": true
     },
     {
+      "id": "0001010",
+      "nombre": "Princesa Vogue",
+      "precio": 5000,
+      "imagen": "img/1010.jpeg",
+      "categoria": "Muñecas",
+      "descripcion": "Princesa Vogue con Accesorios",
+      "activo": true
+    },
+    {
+      "id": "0001011",
+      "nombre": "Sirenas Grandes",
+      "precio": 5000,
+      "imagen": "img/1011.jpeg",
+      "categoria": "Muñecas",
+      "descripcion": "Sirenas para mayores de 3 Años",
+      "activo": true
+    },
+    {
+      "id": "0001012",
+      "nombre": "Princesa Barbie Nueva Serie",
+      "precio": 3000,
+      "imagen": "img/1012.jpeg",
+      "categoria": "Muñecas",
+      "descripcion": "Princesa Barbie Nueva Serie",
+      "activo": true
+    },
+    {
+      "id": "0001013",
+      "nombre": "Princesa",
+      "precio": 5000,
+      "imagen": "img/1013.jpeg",
+      "categoria": "Muñecas",
+      "descripcion": "Princesa Fashion Girl",
+      "activo": true
+    },
+    {
+      "id": "0001014",
+      "nombre": "Princesas",
+      "precio": 2500,
+      "imagen": "img/1014.jpeg",
+      "categoria": "Muñecas",
+      "descripcion": "Princesas",
+      "activo": true
+    },
+    {
+      "id": "0001015",
+      "nombre": "Princesa Barbie Pequeñas",
+      "precio": 5000,
+      "imagen": "img/1015.jpeg",
+      "categoria": "Muñecas",
+      "descripcion": "Princesa Tamaño Barbie Pequeñas",
+      "activo": true
+    },
+    {
+      "id": "0001016",
+      "nombre": "Princesa Bella",
+      "precio": 3500,
+      "imagen": "img/1016.jpeg",
+      "categoria": "Muñecas",
+      "descripcion": "Bella Princesa para niñas Mayores de 5 años",
+      "activo": true
+    },
+    {
+      "id": "0001017",
+      "nombre": "Princesas Pequeñas",
+      "precio": 3000,
+      "imagen": "img/1017.jpeg",
+      "categoria": "Muñecas",
+      "descripcion": "Princesas Pequeñas",
+      "activo": true
+    },
+    {
       "id": "000111",
       "nombre": "Balones de Fútbol",
       "precio": 6000,
