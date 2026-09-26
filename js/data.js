@@ -15,21 +15,21 @@ const SITE_DATA = {
   "categorias": [
     "Artículos para Bebés",
     "Bebés",
-"Bicicletas y Patinetas",
-"Carros de Control Remoto",
-"Carros, Rastras y Camiones",
-"Castillos",
-"Juguetes Didácticos",
-"Juguetes Musicales",
-"Libros de Cuentos",
-"Muñecas",
-"Pelotas y Juguetes de Playa",
-"Pistolas",
-"Set de Armas",
-"Set de Cocina, Médico y de Uñas",
-"Set de Corona y de Tacones",
-"Set de Dino, Animales y de Herramientas",
-"Set de Maquillaje y de Armar Pulsas"
+    "Bicicletas y Patinetas",
+    "Carros de Control Remoto",
+    "Carros, Rastras y Camiones",
+    "Castillos",
+    "Juguetes Didácticos",
+    "Juguetes Musicales",
+    "Libros de Cuentos",
+    "Muñecas",
+    "Pelotas y Juguetes de Playa",
+    "Pistolas",
+    "Set de Armas",
+    "Set de Cocina, Médico y de Uñas",
+    "Set de Corona y de Tacones",
+    "Set de Dino, Animales y de Herramientas",
+    "Set de Maquillaje y de Armar Pulsas"
   ],
   "productos": [
     {
@@ -38,7 +38,7 @@ const SITE_DATA = {
       "precio": 3500,
       "imagen": "img/11.jpeg",
       "categoria": "Artículos para Bebés",
-      "descripcion": "Set de Regalos para Bebés",
+      "descripcion": "Set de Regalos para Bebés Elegantes menores de 3 años",
       "activo": true
     },
     {
@@ -149,7 +149,7 @@ const SITE_DATA = {
       "descripcion": "Carriolas para Niños(3-7 años) Altura 7cm Largo 61cm",
       "activo": true
     },
-     {
+    {
       "id": "00032",
       "nombre": "Patinetas",
       "precio": 12000,
@@ -383,7 +383,7 @@ const SITE_DATA = {
       "descripcion": "Arma tu propia prehistoria",
       "activo": true
     },
-     {
+    {
       "id": "00075",
       "nombre": "Juegos de Agua",
       "precio": 1500,
@@ -392,7 +392,7 @@ const SITE_DATA = {
       "descripcion": "Diversión Portátil",
       "activo": true
     },
-     {
+    {
       "id": "00076",
       "nombre": "Construye para la Velocidad y la Potencia",
       "precio": 4000,
@@ -437,7 +437,7 @@ const SITE_DATA = {
       "descripcion": "Rompecabezas Cristiano Ronaldo",
       "activo": true
     },
-     {
+    {
       "id": "000711",
       "nombre": "Set de Dibujos de 42 Piezas",
       "precio": 2500,
@@ -446,7 +446,7 @@ const SITE_DATA = {
       "descripcion": "Set de Dibujos de 42 Piezas",
       "activo": true
     },
-     {
+    {
       "id": "000712",
       "nombre": "Libro Dino 3D, Gafas Incluidas",
       "precio": 1500,
@@ -455,7 +455,7 @@ const SITE_DATA = {
       "descripcion": "Libro Dino 3D, Gafas Incluidas",
       "activo": true
     },
-     {
+    {
       "id": "000713",
       "nombre": "Burbuja Mágica",
       "precio": 2500,
@@ -464,7 +464,7 @@ const SITE_DATA = {
       "descripcion": "Burbuja Mágica",
       "activo": true
     },
-     {
+    {
       "id": "000714",
       "nombre": "Juego de Cartas",
       "precio": 1000,
@@ -473,7 +473,7 @@ const SITE_DATA = {
       "descripcion": "Juego de Cartas",
       "activo": true
     },
-     {
+    {
       "id": "000715",
       "nombre": "Pizarrón Mágico Multicolor",
       "precio": 1500,
@@ -482,7 +482,7 @@ const SITE_DATA = {
       "descripcion": "Pizarrón Mágico",
       "activo": true
     },
-     {
+    {
       "id": "000716",
       "nombre": "Bolsas de Bolas",
       "precio": 800,
@@ -491,7 +491,7 @@ const SITE_DATA = {
       "descripcion": "Bolsas de Bolas",
       "activo": true
     },
-     {
+    {
       "id": "000717",
       "nombre": "Arco de Baloncesto",
       "precio": 5000,
@@ -500,7 +500,7 @@ const SITE_DATA = {
       "descripcion": "Arco de Baloncesto con su balon y otros accesorios",
       "activo": true
     },
-     {
+    {
       "id": "00081",
       "nombre": "Piano Grande",
       "precio": 7000,
@@ -797,7 +797,7 @@ const SITE_DATA = {
       "descripcion": "Salvavidas de 2-6 Años",
       "activo": true
     },
-   {
+    {
       "id": "000121",
       "nombre": "Equipo Juego de Acción",
       "precio": 4000,
@@ -815,7 +815,7 @@ const SITE_DATA = {
       "descripcion": "Diversión sin Fin",
       "activo": true
     },
-     {
+    {
       "id": "000123",
       "nombre": "Set Completo de Juego para Niños",
       "precio": 2000,
@@ -824,7 +824,7 @@ const SITE_DATA = {
       "descripcion": "Diversión y Aventura Asegurada",
       "activo": true
     },
-     {
+    {
       "id": "000124",
       "nombre": "Pistola de Burbujas Eléctrico",
       "precio": 6500,
@@ -833,7 +833,7 @@ const SITE_DATA = {
       "descripcion": "Disparo de Burbujas Eléctrico",
       "activo": true
     },
-     {
+    {
       "id": "000125",
       "nombre": "Pistola de Agua Premium",
       "precio": 3000,
@@ -842,7 +842,7 @@ const SITE_DATA = {
       "descripcion": "Diversión de Verano Total",
       "activo": true
     },
-     {
+    {
       "id": "000126",
       "nombre": "Arma Militar",
       "precio": 4000,
@@ -851,7 +851,7 @@ const SITE_DATA = {
       "descripcion": "Arma Militar",
       "activo": true
     },
-     {
+    {
       "id": "000127",
       "nombre": "Pistola de Burbujas Para Niñas",
       "precio": 5500,
@@ -860,7 +860,7 @@ const SITE_DATA = {
       "descripcion": "Pistola de Burbujas Para Niñas",
       "activo": true
     },
-     {
+    {
       "id": "000128",
       "nombre": "Pistola Laser con Sonido y Luces",
       "precio": 6500,
@@ -869,7 +869,7 @@ const SITE_DATA = {
       "descripcion": "Pistola Laser con Sonido y Luces",
       "activo": true
     },
-     {
+    {
       "id": "000129",
       "nombre": "Pistola Porta Aviones",
       "precio": 5000,
@@ -878,7 +878,7 @@ const SITE_DATA = {
       "descripcion": "Pistola Porta Aviones",
       "activo": true
     },
-     {
+    {
       "id": "000131",
       "nombre": "Arco con Flechas",
       "precio": 4000,
@@ -977,7 +977,7 @@ const SITE_DATA = {
       "descripcion": "Varita Mágica que Alumbra y Suena",
       "activo": true
     },
-     {
+    {
       "id": "000152",
       "nombre": "Varita Mágica Especial",
       "precio": 5000,
@@ -986,7 +986,7 @@ const SITE_DATA = {
       "descripcion": "Varita Mágica Especial para Niñas mayores de 3 Años",
       "activo": true
     },
-     {
+    {
       "id": "000153",
       "nombre": "Kit Completo",
       "precio": 3500,
@@ -995,7 +995,7 @@ const SITE_DATA = {
       "descripcion": "Varita, Guantes, Corona, Collar, Arete y Anillos",
       "activo": true
     },
-     {
+    {
       "id": "000154",
       "nombre": "Kit Completo",
       "precio": 5500,
@@ -1004,7 +1004,7 @@ const SITE_DATA = {
       "descripcion": "Tacones, Collar, Aretes y Corona",
       "activo": true
     },
-     {
+    {
       "id": "000155",
       "nombre": "Kit de Accesorios para la Princesa Moderna",
       "precio": 5000,
@@ -1013,7 +1013,7 @@ const SITE_DATA = {
       "descripcion": "Kit de Accesorios para la Princesa Moderna",
       "activo": true
     },
-     {
+    {
       "id": "000156",
       "nombre": "Kit de Princesa",
       "precio": 5000,
@@ -1129,6 +1129,6 @@ const SITE_DATA = {
       "categoria": "Set de Maquillaje y de Armar Pulsas",
       "descripcion": "Set de Armar Pulsas",
       "activo": true
-    },
+    }
   ]
 };
